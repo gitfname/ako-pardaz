@@ -1,7 +1,6 @@
 import Image from "next/image"
 import SideBarLink from "./SideBarLink"
-import { ApartmentIcon, HeadPhoneIcon, MdIcon, MenuIcon, PlusIcon, SettingsIcon } from "../icons"
-import { CiSquarePlus } from "react-icons/ci"
+import { HeadPhoneIcon, MdIcon, MenuIcon, PlusIcon, SettingsIcon } from "../icons"
 
 function SideBar() {
     return (
