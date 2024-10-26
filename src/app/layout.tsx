@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { SideBar } from "./components";
+import TopNavigationBar from "./components/TopNavigationBar";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,15 +17,15 @@ export default function RootLayout({
     <html lang="fa" dir="rtl">
       <body>
 
-        <div className="w-full h-screen  overflow-hidden grid grid-cols-[13rem_1fr] gap-3.5">
+        <div className="w-full h-screen  overflow-hidden grid grid-cols-1 lg:grid-cols-[14rem_1fr]">
 
-          <aside className="overflow-y-auto">
-            <div className="w-full h-max">
+          <aside className="overflow-y-auto max-lg:hidden">
+            <div className="w-full">
               <SideBar />
             </div>
           </aside>
 
-          <main className="bg-myBlue/5">
+          <main className="bg-myBlue/10 overflow-y-auto">
             {children}
           </main>
 

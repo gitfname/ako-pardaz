@@ -1,7 +1,11 @@
+import TopNavigationBar from "../components/TopNavigationBar"
 
 function SeePersonCompany() {
     return (
-        <div className="font-[vazir]">مشاهده شخص/شرکت</div>
+        <div>
+            <TopNavigationBar />
+            <div className="font-[vazir]">مشاهده شخص/شرکت</div>
+        </div>
     )
 }
 

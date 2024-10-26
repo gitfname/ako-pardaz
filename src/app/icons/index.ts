@@ -4,6 +4,7 @@ import PlusIcon from "./PlusIcon";
 import MdIcon from "./MdIcon";
 import SettingsIcon from "./SettingsIcon";
 import HeadPhoneIcon from "./HeadPhoneIcon";
+import BellIcon from "./BellIcon";
 
 export {
     MenuIcon,
@@ -12,4 +13,5 @@ export {
     MdIcon,
     SettingsIcon,
     HeadPhoneIcon,
+    BellIcon
 }

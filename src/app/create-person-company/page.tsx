@@ -1,7 +1,11 @@
+import TopNavigationBar from "../components/TopNavigationBar"
 
 function CreatePersonCompany() {
     return (
-        <div className="font-[vazir]">ثبت شخص/شرکت</div>
+        <div>
+            <TopNavigationBar />
+            <div className="font-[vazir]">ثبت شخص/شرکت</div>
+        </div>
     )
 }
 

@@ -1,7 +1,11 @@
+import TopNavigationBar from "../components/TopNavigationBar"
 
 function FinancialSettings() {
     return (
-        <div className="font-[vazir]">تنظیمالت مالی</div>
+        <div>
+            <TopNavigationBar />
+            <div className="font-[vazir]">تنظیمالت مالی</div>
+        </div>
     )
 }
 

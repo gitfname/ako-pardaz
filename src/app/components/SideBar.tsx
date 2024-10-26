@@ -1,6 +1,6 @@
 import Image from "next/image"
 import SideBarLink from "./SideBarLink"
-import { HeadPhoneIcon, MdIcon, MenuIcon, PlusIcon, SettingsIcon } from "../icons"
+import { ApartmentIcon, HeadPhoneIcon, MdIcon, MenuIcon, PlusIcon, SettingsIcon } from "../icons"
 
 function SideBar() {
     return (
@@ -33,7 +33,7 @@ function SideBar() {
                     text="مشاهده شخص شرکت"
                     link="/see-person-company"
                     icon={
-                        <MenuIcon width={18} height={18} />
+                        <ApartmentIcon width={18} height={18} />
                     }
                 />
 

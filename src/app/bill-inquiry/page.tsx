@@ -1,7 +1,11 @@
+import TopNavigationBar from "../components/TopNavigationBar"
 
 function BillInquiry() {
     return (
-        <div className="font-[vazir]">استعلام صورت حساب</div>
+        <div>
+            <TopNavigationBar />
+            <div className="font-[vazir]">استعلام صورت حساب</div>
+        </div>
     )
 }
 

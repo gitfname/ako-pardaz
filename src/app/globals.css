@@ -7,6 +7,30 @@
   src: url(/fonts/Vazir.woff);
 }
 
+* {
+  font-family: vazir, Arial;
+}
+
+@layer components {
+  .btn {
+    @apply p-2 px-3 min-w-9 min-h-9 rounded-lg text-sm leading-none bg-white text-black/90 stroke-black/90
+    active:scale-95 transition-all duration-200 flex items-center justify-center gap-x-2;
+  }
+
+  .btn--primary {
+    @apply bg-myBlue text-white stroke-white;
+  }
+
+  .btn--transparent {
+    @apply bg-transparent text-white stroke-white focus:bg-white/20 hover:bg-white/15;
+  }
+
+
+  .box-shadow-sm {
+    @apply [box-shadow:1px_2px_10px_rgba(0,0,0,0.08)];
+  }
+}
+
 .blue-outline {
   @apply outline outline-2 outline-offset-1 outline-[#7389FF];
 }
