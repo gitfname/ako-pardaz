@@ -13,8 +13,7 @@
 
 @layer components {
   .btn {
-    @apply p-2 px-3 min-w-9 min-h-9 rounded-lg text-sm leading-none bg-white text-black/90 stroke-black/90
-    active:scale-95 transition-all duration-200 flex items-center justify-center gap-x-2;
+    @apply p-2 px-3 cursor-pointer min-w-9 min-h-9 rounded-lg text-sm leading-none bg-white text-black/90 stroke-black/90 active:scale-95 transition-all duration-200 flex items-center justify-center gap-x-2;
   }
 
   .btn--primary {
@@ -24,10 +23,53 @@
   .btn--transparent {
     @apply bg-transparent text-white stroke-white focus:bg-white/20 hover:bg-white/15;
   }
+  
+  .btn--outline {
+    @apply bg-transparent text-myBlue stroke-myBlue focus:bg-myBlue/15 hover:bg-myBlue/10;
+  }
+
+  .btn--bordered {
+    @apply border border-gray-300 bg-transparent text-black/90 stroke-black/90 hover:bg-myBlue/15;
+  }
 
 
   .box-shadow-sm {
-    @apply [box-shadow:1px_2px_10px_rgba(0,0,0,0.08)];
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.08);
+  }
+
+
+
+  /* text-input */
+
+  .text-input-container {
+    @apply relative w-full;
+  }
+
+  .text-input {
+    @apply w-full p-2 px-3 min-h-10 rounded-md text-sm font-[vazir] outline outline-2 outline-transparent outline-offset-1 focus:outline-myBlue;
+  }
+
+  .text-input__float-label {
+    @apply absolute top-1/2 pointer-events-none -translate-y-1/2 right-4 p-0 text-sm text-black/50 leading-none transition-transform duration-150;
+  }
+
+  .text-input:not(:placeholder-shown)+.text-input__float-label {
+    @apply -translate-y-[calc(100%+1.55rem)];
+  }
+
+  .text-input--bordered {
+    @apply border border-gray-300;
+  }
+
+
+
+  /* file-input */
+  .file-input-container {
+    @apply w-full p-2 px-3 min-h-10 rounded-md text-sm block;
+  }
+
+  .file-input--bordered {
+    @apply border border-gray-300;
   }
 }
 

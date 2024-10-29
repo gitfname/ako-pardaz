@@ -4,7 +4,7 @@ import { ApartmentIcon, HeadPhoneIcon, MdIcon, MenuIcon, PlusIcon, SettingsIcon 
 
 function SideBar() {
     return (
-        <div className="grid grid-cols-1 grid-rows-[max-content_1fr] h-screen w-full">
+        <div className="grid grid-cols-1 grid-rows-[max-content_1fr] h-[97vh] bg-white w-full rounded-bl-xl">
             <div className="min-h-[9rem] p-3">
                 <Image
                     src="https://fakeimg.pl/250x250/"
@@ -68,6 +68,17 @@ function SideBar() {
                         <HeadPhoneIcon width={18} height={18} />
                     }
                 />
+
+                <div className="mt-auto mx-auto w-[80%] pb-4 box-shadow-sm">
+                    <Image
+                        alt="Ako Pardaz"
+                        src="/images/logo.svg"
+                        width={200}
+                        height={200}
+                        loading="lazy"
+                        className="w-full h-auto"
+                    />
+                </div>
             </div>
         </div>
     )
