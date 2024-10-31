@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { SideBar } from "./components";
-import ChatsContextProvider from "./components/chat/context/ChatsContextProvider";
 import "@mantine/core/styles.css"
 import { MantineProvider, createTheme } from "@mantine/core";
+import { Provider } from "jotai"
+import ApplicationModalsProvider from "@/components/application-modals/ApplicationModalsProvider";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -11,6 +11,20 @@ export const metadata: Metadata = {
 };
 
 const theme = createTheme({
+  colors: {
+    primaryColor: [
+      "#e8edff",
+      "#ced7ff",
+      "#9babff",
+      "#647dff",
+      "#3755fe",
+      "#1b3dfe",
+      "#0930ff",
+      "#0023e4",
+      "#001fcd",
+      "#0019b4"
+    ]
+  },
   fontFamily: "vazir"
 })
 
@@ -21,27 +35,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fa" dir="rtl">
-      <ChatsContextProvider>
-
+      <Provider>
         <body>
           <MantineProvider theme={theme}>
-            <div className="w-full h-screen  overflow-hidden grid grid-cols-1 lg:grid-cols-[14rem_1fr] bg-myBlue/10 ">
-
-              <aside className="overflow-y-auto max-lg:hidden">
-                <div className="w-full">
-                  <SideBar />
-                </div>
-              </aside>
-
-              <main className="overflow-y-auto">
-                {children}
-              </main>
-
-            </div>
+            <ApplicationModalsProvider>
+              {children}
+            </ApplicationModalsProvider>
           </MantineProvider>
         </body>
-
-      </ChatsContextProvider>
+      </Provider>
     </html >
   );
 }
