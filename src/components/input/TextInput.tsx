@@ -25,7 +25,12 @@ function TextInput({ floatLabel, rightSection, ...restProps }: Props) {
                                     <p className="text-sm text-black/70 leading-none">{rightSection}</p>
                                 </div>
                                 :
-                                rightSection
+                                <div
+                                    className="bg-zinc-200/70 flex-1 self-stretch p-2 border-l-transparent
+                            rounded-r-md border border-gray-300 flex items-center"
+                                >
+                                    {rightSection}
+                                </div>
                         }
                         <input
                             type="text"

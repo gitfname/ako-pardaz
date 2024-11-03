@@ -41,7 +41,7 @@ function Auth() {
                         />
 
                         <p className="text-xs font-normal text-black/80">
-                            رمز عبور خود را فراموش کرده اید ؟ <span className="text-myBlue">بازیابی رمز عبور</span>
+                            رمز عبور خود را فراموش کرده اید ؟ <Link href="/password-recovery" className="text-myBlue">بازیابی رمز عبور</Link>
                         </p>
 
                         <Checkbox label="مرا به خاطر بسپار" size="xs" mt="lg" />
@@ -51,7 +51,7 @@ function Auth() {
                         </Button>
 
                         <p className="text-xs font-normal text-black/80">
-                            حساب کاربری ندارید ؟ <span className="text-myBlue">ثبت نام کنید</span>
+                            حساب کاربری ندارید ؟ <Link href="/signup" className="text-myBlue">ثبت نام کنید</Link>
                         </p>
 
                         <Divider label="یا" />

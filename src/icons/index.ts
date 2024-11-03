@@ -38,6 +38,20 @@ import PersonPlusIconSolid from "./PersonPlusIconSolid";
 import ClockIconSolid from "./ClockIconSolid";
 import PersonIconSolid from "./PersonIconSolid";
 import KeyIconSolid from "./KeyIconSolid";
+import ThreeDotsIconSolid from "./ThreeDotsIconSolid";
+import NationalCardIconSolid from "./NationalCardIconSolid";
+import SandClockIconSolid from "./SandClockIconSolid";
+import BranchCodeIconSolid from "./BranchCodeIconSolid";
+import BulbIconSolid from "./BulbIconSolid";
+import CubeIconSolid from "./CubeIconSolid";
+import ThreePersonIconSolid from "./ThreePersonIconSolid";
+import BillIconSolid from "./BillIconSolid";
+import ReportsIconSolid from "./ReportsIconSolid";
+import ReportsSandClockIconSquare from "./SandClockIconSquare";
+import ExcelIconSolid from "./ExcelIconSolid";
+import CubeIconSquare from "./CubeIconSquare";
+import Icon2Square from "./Icon2Square";
+import PersonWithMessageIconSquare from "./PersonWithMessageIconSquare";
 
 export {
     MenuIcon,
@@ -79,5 +93,19 @@ export {
     PersonPlusIconSolid,
     ClockIconSolid,
     PersonIconSolid,
-    KeyIconSolid
+    KeyIconSolid,
+    ThreeDotsIconSolid,
+    NationalCardIconSolid,
+    SandClockIconSolid,
+    BranchCodeIconSolid,
+    BulbIconSolid,
+    CubeIconSolid,
+    ThreePersonIconSolid,
+    BillIconSolid,
+    ReportsIconSolid,
+    ReportsSandClockIconSquare,
+    ExcelIconSolid,
+    CubeIconSquare,
+    Icon2Square,
+    PersonWithMessageIconSquare
 }

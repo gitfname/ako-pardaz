@@ -26,7 +26,7 @@ function BodyCard({ icon, leftSection, title, children }: Props) {
                     {
                         title
                             ?
-                            <span className="text-sm text-black/80">{title}</span>
+                            <span className="text-base font-medium text-black/80">{title}</span>
                             :
                             null
                     }
