@@ -63,7 +63,7 @@ function PersonCompanyLayout({ children }: { children: ReactNode }) {
                             طرف حساب ها
                         </Button>
 
-                        <Button onClick={() => setCurrentTab(4)} color="var(--mantine-color-primaryColor-3)" fw={400} radius="md" variant={currentTab === 4 ? "filled" : "light"} flex={1}>
+                        <Button component={Link} href="/person-company/123/billing-inquiries" onClick={() => setCurrentTab(4)} color="var(--mantine-color-primaryColor-3)" fw={400} radius="md" variant={currentTab === 4 ? "filled" : "light"} flex={1}>
                             <BillIconSolid width={18} height={18} className={"flex-shrink-0 " + (currentTab === 4 ? "stroke-white" : "stroke-myBlue")} />&nbsp;
                             صورت حساب ها
                         </Button>
