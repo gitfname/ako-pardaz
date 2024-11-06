@@ -171,7 +171,7 @@ function BillingInquiries() {
 
                                         <ActionIcon
                                             component={Link}
-                                            href="/person-company/123/from-the-accounts/123/details"
+                                            href="/person-company/123/billing-inquiries/123"
                                             color="var(--mantine-color-primaryColor-3)"
                                         >
                                             <EyeIcon width={18} height={18} className="stroke-white" />

@@ -174,16 +174,6 @@ const CreateBillingInquiry_Step2 = () => {
 }
 
 const CreateBillingInquiry_Step3 = () => {
-    const [items, setItems] = useState<{ key: string }[]>([])
-
-    const handleAddItemClick = () => {
-        setItems(prev => [...prev, { key: crypto.randomUUID() }])
-    }
-
-    const handleRemoveItemClick = (key: string) => {
-        setItems(prev => prev.filter(item => item.key !== key))
-    }
-
     return (
         <div className="space-y-12">
             <div>
@@ -196,7 +186,7 @@ const CreateBillingInquiry_Step3 = () => {
                     />
 
                     <div className="absolute top-1/2 left-1 -translate-y-1/2">
-                        <Button onClick={handleAddItemClick} radius="md" fw={400} color="var(--mantine-color-primaryColor-3)">
+                        <Button radius="md" fw={400} color="var(--mantine-color-primaryColor-3)">
                             <EditIcon width={20} height={20} className="stroke-white" />&nbsp;
                             ویرایش
                         </Button>
@@ -272,7 +262,7 @@ const CreateBillingInquiry_Step3 = () => {
                     />
 
                     <div className="absolute top-1/2 left-1 -translate-y-1/2">
-                        <Button onClick={handleAddItemClick} radius="md" fw={400} color="var(--mantine-color-primaryColor-3)">
+                        <Button radius="md" fw={400} color="var(--mantine-color-primaryColor-3)">
                             <EditIcon width={20} height={20} className="stroke-white" />&nbsp;
                             ویرایش
                         </Button>

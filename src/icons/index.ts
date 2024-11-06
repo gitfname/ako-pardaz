@@ -58,6 +58,7 @@ import BookmarkIconSolid from "./BokmarkIconSolid";
 import CalculatorIconSolid from "./CalculatorIconSolid";
 import DiscountIconSolid from "./DiscounticonSolid";
 import BookmarkIconWithMessageSquare from "./BookmarkIconWithMessageSquare";
+import TickIconFilled from "./TickIconFilled";
 
 export {
     MenuIcon,
@@ -119,5 +120,6 @@ export {
     BookmarkIconSolid,
     CalculatorIconSolid,
     DiscountIconSolid,
-    BookmarkIconWithMessageSquare
+    BookmarkIconWithMessageSquare,
+    TickIconFilled
 }
