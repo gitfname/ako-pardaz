@@ -54,6 +54,8 @@ import Icon2Square from "./Icon2Square";
 import PersonWithMessageIconSquare from "./PersonWithMessageIconSquare";
 import BillIconSquare from "./BillIconSquare";
 import ExclamationMarkIconSquare from "./ExclamationMarkIconSquare";
+import BookmarkIconSolid from "./BokmarkIconSolid";
+import CalculatorIconSolid from "./CalculatorIconSolid";
 
 export {
     MenuIcon,
@@ -111,5 +113,7 @@ export {
     Icon2Square,
     PersonWithMessageIconSquare,
     BillIconSquare,
-    ExclamationMarkIconSquare
+    ExclamationMarkIconSquare,
+    BookmarkIconSolid,
+    CalculatorIconSolid
 }

@@ -12,7 +12,7 @@ function BillingInquiries() {
             }
             leftSection={
                 <div className="flex items-center gap-x-2">
-                    <Button component={Link} href="/person-company/123/from-the-accounts/create" color="var(--mantine-color-primaryColor-3)" radius="md" fw={400}>
+                    <Button component={Link} href="/person-company/123/billing-inquiries/create" color="var(--mantine-color-primaryColor-3)" radius="md" fw={400}>
                         <PlusIcon width={20} height={20} className="stroke-white" />&nbsp;
                         ثبت صورت حساب
                     </Button>
