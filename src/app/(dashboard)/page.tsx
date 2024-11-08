@@ -19,7 +19,7 @@ export default function Home() {
     <TopNavigationBar />
 
     <div className="w-full p-2 md:p-5">
-      <div className="-translate-y-24 grid lg:grid-cols-2 xl:grid-cols-3 gap-5 gap-y-7">
+      <div className="-translate-y-24 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 gap-y-7">
         <BodyCard
           title="اطلاعات کاربری"
           icon={<UserIconSquare width={22} height={22} />}
@@ -35,7 +35,7 @@ export default function Home() {
               />
             </div>
 
-            <button className="btn btn--primary mt-4">
+            <button className="btn btn--primary mt-4 max-sm:w-full">
               <EditIcon width={18} height={18} />
               ویرایش اطلاعات
             </button>
@@ -63,7 +63,10 @@ export default function Home() {
               </p>
             </div>
 
-            <button onClick={() => setIsInviteFriendsModalOpen(true)} className="btn btn--primary mt-4">
+            <button
+              onClick={() => setIsInviteFriendsModalOpen(true)}
+              className="btn btn--primary mt-4 max-sm:w-full"
+            >
               <PersonalIcon width={18} height={18} />
               دعوت از دوستان
             </button>
@@ -100,7 +103,7 @@ export default function Home() {
               </div>
             </div>
 
-            <button className="btn btn--primary mt-4">
+            <button className="btn btn--primary mt-4 max-sm:w-full">
               <PlusIcon width={18} height={18} />
               ثبت شخص/شرکت  جدید
             </button>
@@ -121,13 +124,13 @@ export default function Home() {
           />
         </div>
 
-        <div className="col-span-2 xl:order-1">
+        <div className="md:col-span-2 xl:order-1">
           <BodyCard
             title="توضیع صورت حساب ها به تفکیک شخص/فروش"
             icon={<LayersIconSquare width={22} height={22} />}
             children={<>
               <div className="min-h-36">
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between gap-5 flex-wrap-reverse">
                   <Select
                     defaultValue="بیشترین فروش"
                     data={["بیشترین فروش", "کمترین فروش", "فروش های بزرگ"]}
@@ -141,66 +144,68 @@ export default function Home() {
                   />
                 </div>
 
-                <Table
-                  className="mt-10"
-                  classNames={{
-                    th: "last:rounded-tl-xl first:rounded-tr-xl text-black/60 font-normal"
-                  }}
-                  striped="even"
-                >
-                  <Table.Thead className="bg-myBlue/10">
-                    <Table.Tr>
-                      <Table.Th>شخص شرکت</Table.Th>
-                      <Table.Th>حقیقی/حقوقی</Table.Th>
-                      <Table.Th>تعداد کل فاکتور ها</Table.Th>
-                      <Table.Th>جمع فروش</Table.Th>
-                    </Table.Tr>
-                  </Table.Thead>
+                <Table.ScrollContainer minWidth={650}>
+                  <Table
+                    className="mt-10"
+                    classNames={{
+                      th: "last:rounded-tl-xl first:rounded-tr-xl text-black/60 font-normal"
+                    }}
+                    striped="even"
+                  >
+                    <Table.Thead className="bg-myBlue/10">
+                      <Table.Tr>
+                        <Table.Th>شخص شرکت</Table.Th>
+                        <Table.Th>حقیقی/حقوقی</Table.Th>
+                        <Table.Th>تعداد کل فاکتور ها</Table.Th>
+                        <Table.Th>جمع فروش</Table.Th>
+                      </Table.Tr>
+                    </Table.Thead>
 
-                  <Table.Tbody>
-                    <Table.Tr>
-                      <Table.Td>فولاد تدبیر اصفهان</Table.Td>
-                      <Table.Td>حقوقی</Table.Td>
-                      <Table.Td>68</Table.Td>
-                      <Table.Td>1,119,460,743,224 تومان</Table.Td>
-                    </Table.Tr>
+                    <Table.Tbody>
+                      <Table.Tr>
+                        <Table.Td>فولاد تدبیر اصفهان</Table.Td>
+                        <Table.Td>حقوقی</Table.Td>
+                        <Table.Td>68</Table.Td>
+                        <Table.Td>1,119,460,743,224 تومان</Table.Td>
+                      </Table.Tr>
 
-                    <Table.Tr>
-                      <Table.Td>فولاد تدبیر اصفهان</Table.Td>
-                      <Table.Td>حقوقی</Table.Td>
-                      <Table.Td>68</Table.Td>
-                      <Table.Td>1,119,460,743,224 تومان</Table.Td>
-                    </Table.Tr>
+                      <Table.Tr>
+                        <Table.Td>فولاد تدبیر اصفهان</Table.Td>
+                        <Table.Td>حقوقی</Table.Td>
+                        <Table.Td>68</Table.Td>
+                        <Table.Td>1,119,460,743,224 تومان</Table.Td>
+                      </Table.Tr>
 
-                    <Table.Tr>
-                      <Table.Td>فولاد تدبیر اصفهان</Table.Td>
-                      <Table.Td>حقوقی</Table.Td>
-                      <Table.Td>68</Table.Td>
-                      <Table.Td>1,119,460,743,224 تومان</Table.Td>
-                    </Table.Tr>
+                      <Table.Tr>
+                        <Table.Td>فولاد تدبیر اصفهان</Table.Td>
+                        <Table.Td>حقوقی</Table.Td>
+                        <Table.Td>68</Table.Td>
+                        <Table.Td>1,119,460,743,224 تومان</Table.Td>
+                      </Table.Tr>
 
-                    <Table.Tr>
-                      <Table.Td>فولاد تدبیر اصفهان</Table.Td>
-                      <Table.Td>حقوقی</Table.Td>
-                      <Table.Td>68</Table.Td>
-                      <Table.Td>1,119,460,743,224 تومان</Table.Td>
-                    </Table.Tr>
+                      <Table.Tr>
+                        <Table.Td>فولاد تدبیر اصفهان</Table.Td>
+                        <Table.Td>حقوقی</Table.Td>
+                        <Table.Td>68</Table.Td>
+                        <Table.Td>1,119,460,743,224 تومان</Table.Td>
+                      </Table.Tr>
 
-                    <Table.Tr>
-                      <Table.Td>فولاد تدبیر اصفهان</Table.Td>
-                      <Table.Td>حقوقی</Table.Td>
-                      <Table.Td>68</Table.Td>
-                      <Table.Td>1,119,460,743,224 تومان</Table.Td>
-                    </Table.Tr>
+                      <Table.Tr>
+                        <Table.Td>فولاد تدبیر اصفهان</Table.Td>
+                        <Table.Td>حقوقی</Table.Td>
+                        <Table.Td>68</Table.Td>
+                        <Table.Td>1,119,460,743,224 تومان</Table.Td>
+                      </Table.Tr>
 
-                    <Table.Tr>
-                      <Table.Td>فولاد تدبیر اصفهان</Table.Td>
-                      <Table.Td>حقوقی</Table.Td>
-                      <Table.Td>68</Table.Td>
-                      <Table.Td>1,119,460,743,224 تومان</Table.Td>
-                    </Table.Tr>
-                  </Table.Tbody>
-                </Table>
+                      <Table.Tr>
+                        <Table.Td>فولاد تدبیر اصفهان</Table.Td>
+                        <Table.Td>حقوقی</Table.Td>
+                        <Table.Td>68</Table.Td>
+                        <Table.Td>1,119,460,743,224 تومان</Table.Td>
+                      </Table.Tr>
+                    </Table.Tbody>
+                  </Table>
+                </Table.ScrollContainer>
 
                 <div className="w-max mx-auto mt-4">
                   <Pagination defaultValue={1} total={7} size="sm" gap={3} />
@@ -210,7 +215,7 @@ export default function Home() {
           />
         </div>
 
-        <div className="col-span-full">
+        <div className="md:col-span-full">
           <BodyCard
             title="لیست خرید های کاربر"
             icon={<ShoppingCarIconSquare width={22} height={22} />}
@@ -222,7 +227,7 @@ export default function Home() {
             }
             children={<>
               <div className="min-h-36">
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between gap-5 flex-wrap-reverse">
                   <Select
                     defaultValue="بیشترین فروش"
                     data={["بیشترین فروش", "کمترین فروش", "فروش های بزرگ"]}
@@ -236,64 +241,66 @@ export default function Home() {
                   />
                 </div>
 
-                <Table
-                  className="mt-10"
-                  classNames={{
-                    th: "last:rounded-tl-xl first:rounded-tr-xl text-black/60 font-normal"
-                  }}
-                  striped="even"
-                >
-                  <Table.Thead className="bg-myBlue/10">
-                    <Table.Tr>
-                      <Table.Th>محصول</Table.Th>
-                      <Table.Th>مبلغ پرداختی</Table.Th>
-                      <Table.Th>وضعیت</Table.Th>
-                      <Table.Th>تاریخ پرداخت</Table.Th>
-                      <Table.Th>عملیات</Table.Th>
-                    </Table.Tr>
-                  </Table.Thead>
+                <Table.ScrollContainer minWidth={900}>
+                  <Table
+                    className="mt-10"
+                    classNames={{
+                      th: "last:rounded-tl-xl first:rounded-tr-xl text-black/60 font-normal"
+                    }}
+                    striped="even"
+                  >
+                    <Table.Thead className="bg-myBlue/10">
+                      <Table.Tr>
+                        <Table.Th>محصول</Table.Th>
+                        <Table.Th>مبلغ پرداختی</Table.Th>
+                        <Table.Th>وضعیت</Table.Th>
+                        <Table.Th>تاریخ پرداخت</Table.Th>
+                        <Table.Th>عملیات</Table.Th>
+                      </Table.Tr>
+                    </Table.Thead>
 
-                  <Table.Tbody>
-                    <Table.Tr>
-                      <Table.Td>شخص/شرکت سطح یک ( یکساله )</Table.Td>
-                      <Table.Td>11,904 تومان</Table.Td>
-                      <Table.Td c="red">ناموفق</Table.Td>
-                      <Table.Td>02/08/01_16:05:34</Table.Td>
-                      <Table.Td>
-                        <button className="btn btn--primary">
-                          <DocumentIcon width={18} height={18} />
-                          صدور فاکتور رسمی
-                        </button>
-                      </Table.Td>
-                    </Table.Tr>
+                    <Table.Tbody>
+                      <Table.Tr>
+                        <Table.Td>شخص/شرکت سطح یک ( یکساله )</Table.Td>
+                        <Table.Td>11,904 تومان</Table.Td>
+                        <Table.Td c="red">ناموفق</Table.Td>
+                        <Table.Td>02/08/01_16:05:34</Table.Td>
+                        <Table.Td>
+                          <button className="btn btn--primary">
+                            <DocumentIcon width={18} height={18} />
+                            صدور فاکتور رسمی
+                          </button>
+                        </Table.Td>
+                      </Table.Tr>
 
-                    <Table.Tr>
-                      <Table.Td>شخص/شرکت سطح یک ( یکساله )</Table.Td>
-                      <Table.Td>11,904 تومان</Table.Td>
-                      <Table.Td c="red">ناموفق</Table.Td>
-                      <Table.Td>02/08/01_16:05:34</Table.Td>
-                      <Table.Td>
-                        <button className="btn btn--primary">
-                          <DocumentIcon width={18} height={18} />
-                          صدور فاکتور رسمی
-                        </button>
-                      </Table.Td>
-                    </Table.Tr>
+                      <Table.Tr>
+                        <Table.Td>شخص/شرکت سطح یک ( یکساله )</Table.Td>
+                        <Table.Td>11,904 تومان</Table.Td>
+                        <Table.Td c="red">ناموفق</Table.Td>
+                        <Table.Td>02/08/01_16:05:34</Table.Td>
+                        <Table.Td>
+                          <button className="btn btn--primary">
+                            <DocumentIcon width={18} height={18} />
+                            صدور فاکتور رسمی
+                          </button>
+                        </Table.Td>
+                      </Table.Tr>
 
-                    <Table.Tr>
-                      <Table.Td>شخص/شرکت سطح یک ( یکساله )</Table.Td>
-                      <Table.Td>11,904 تومان</Table.Td>
-                      <Table.Td c="green">موفق</Table.Td>
-                      <Table.Td>02/08/01_16:05:34</Table.Td>
-                      <Table.Td>
-                        <button className="btn btn--primary">
-                          <DocumentIcon width={18} height={18} />
-                          صدور فاکتور رسمی
-                        </button>
-                      </Table.Td>
-                    </Table.Tr>
-                  </Table.Tbody>
-                </Table>
+                      <Table.Tr>
+                        <Table.Td>شخص/شرکت سطح یک ( یکساله )</Table.Td>
+                        <Table.Td>11,904 تومان</Table.Td>
+                        <Table.Td c="green">موفق</Table.Td>
+                        <Table.Td>02/08/01_16:05:34</Table.Td>
+                        <Table.Td>
+                          <button className="btn btn--primary">
+                            <DocumentIcon width={18} height={18} />
+                            صدور فاکتور رسمی
+                          </button>
+                        </Table.Td>
+                      </Table.Tr>
+                    </Table.Tbody>
+                  </Table>
+                </Table.ScrollContainer>
 
                 <div className="w-max mx-auto mt-4">
                   <Pagination defaultValue={1} total={7} size="sm" gap={3} />

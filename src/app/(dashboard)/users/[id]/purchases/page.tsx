@@ -18,7 +18,7 @@ function UserPurchases() {
                         }
                         children={
                             <div className="space-y-6">
-                                <div className="flex items-center justify-between">
+                                <div className="flex items-center justify-between flex-wrap-reverse gap-5">
                                     <Select
                                         defaultValue="بیشترین فروش"
                                         data={["بیشترین فروش", "کمترین فروش", "فروش های بزرگ"]}
@@ -28,7 +28,7 @@ function UserPurchases() {
                                     <TextInput
                                         leftSection={<SearchIcon width={16} height={16} className="stroke-black/50" />}
                                         placeholder="جست و جو"
-                                        className="w-full max-w-xs"
+                                        className="w-full sm:max-w-xs"
                                         classNames={{
                                             input: "!bg-myBlue/5"
                                         }}
@@ -36,8 +36,8 @@ function UserPurchases() {
                                     />
                                 </div>
 
-                                <div className="space-y-3">
-                                    <div className="grid lg:grid-cols-[15rem_1fr_1fr_1fr_10rem] xl:grid-cols-[18rem_1.3fr_1.3fr_1.3fr_1fr] bg-myBlue/10 rounded-lg p-2 divide-x divide-black/20 divide-x-reverse">
+                                <div className="space-y-3 overflow-x-auto">
+                                    <div className="grid min-w-full w-max grid-cols-[15rem_9rem_9rem_9rem_10rem] xl:grid-cols-[18rem_1.3fr_1.3fr_1.3fr_1fr] bg-myBlue/10 rounded-lg p-2 divide-x divide-black/20 divide-x-reverse">
                                         <div className="text-sm text-black/60 pr-3">
                                             محصول
                                         </div>
@@ -59,7 +59,7 @@ function UserPurchases() {
                                         </div>
                                     </div>
 
-                                    <div className="grid lg:grid-cols-[15rem_1fr_1fr_1fr_10rem] xl:grid-cols-[18rem_1.3fr_1.3fr_1.3fr_1fr] rounded-lg p-2 divide-x divide-black/20 divide-x-reverse border border-black/20 odd:border-none odd:bg-zinc-100">
+                                    <div className="grid min-w-full w-max grid-cols-[15rem_9rem_9rem_9rem_10rem] xl:grid-cols-[18rem_1.3fr_1.3fr_1.3fr_1fr] rounded-lg p-2 divide-x divide-black/20 divide-x-reverse border border-black/20 odd:border-none odd:bg-zinc-100">
                                         <div className="text-xs text-black/80 pr-3 flex items-center">
                                             شخص/شرکت سطح یک ( یک ساله )
                                         </div>
@@ -84,7 +84,7 @@ function UserPurchases() {
                                         </div>
                                     </div>
 
-                                    <div className="grid lg:grid-cols-[15rem_1fr_1fr_1fr_10rem] xl:grid-cols-[18rem_1.3fr_1.3fr_1.3fr_1fr] rounded-lg p-2 divide-x divide-black/20 divide-x-reverse border border-black/20 odd:border-none odd:bg-zinc-100">
+                                    <div className="grid min-w-full w-max grid-cols-[15rem_9rem_9rem_9rem_10rem] xl:grid-cols-[18rem_1.3fr_1.3fr_1.3fr_1fr] rounded-lg p-2 divide-x divide-black/20 divide-x-reverse border border-black/20 odd:border-none odd:bg-zinc-100">
                                         <div className="text-xs text-black/80 pr-3 flex items-center">
                                             شخص/شرکت سطح یک ( یک ساله )
                                         </div>
@@ -109,7 +109,7 @@ function UserPurchases() {
                                         </div>
                                     </div>
 
-                                    <div className="grid lg:grid-cols-[15rem_1fr_1fr_1fr_10rem] xl:grid-cols-[18rem_1.3fr_1.3fr_1.3fr_1fr] rounded-lg p-2 divide-x divide-black/20 divide-x-reverse border border-black/20 odd:border-none odd:bg-zinc-100">
+                                    <div className="grid min-w-full w-max grid-cols-[15rem_9rem_9rem_9rem_10rem] xl:grid-cols-[18rem_1.3fr_1.3fr_1.3fr_1fr] rounded-lg p-2 divide-x divide-black/20 divide-x-reverse border border-black/20 odd:border-none odd:bg-zinc-100">
                                         <div className="text-xs text-black/80 pr-3 flex items-center">
                                             شخص/شرکت سطح یک ( یک ساله )
                                         </div>
@@ -134,7 +134,7 @@ function UserPurchases() {
                                         </div>
                                     </div>
 
-                                    <div className="grid lg:grid-cols-[15rem_1fr_1fr_1fr_10rem] xl:grid-cols-[18rem_1.3fr_1.3fr_1.3fr_1fr] rounded-lg p-2 divide-x divide-black/20 divide-x-reverse border border-black/20 odd:border-none odd:bg-zinc-100">
+                                    <div className="grid min-w-full w-max grid-cols-[15rem_9rem_9rem_9rem_10rem] xl:grid-cols-[18rem_1.3fr_1.3fr_1.3fr_1fr] rounded-lg p-2 divide-x divide-black/20 divide-x-reverse border border-black/20 odd:border-none odd:bg-zinc-100">
                                         <div className="text-xs text-black/80 pr-3 flex items-center">
                                             شخص/شرکت سطح یک ( یک ساله )
                                         </div>
@@ -159,7 +159,7 @@ function UserPurchases() {
                                         </div>
                                     </div>
 
-                                    <div className="grid lg:grid-cols-[15rem_1fr_1fr_1fr_10rem] xl:grid-cols-[18rem_1.3fr_1.3fr_1.3fr_1fr] rounded-lg p-2 divide-x divide-black/20 divide-x-reverse border border-black/20 odd:border-none odd:bg-zinc-100">
+                                    <div className="grid min-w-full w-max grid-cols-[15rem_9rem_9rem_9rem_10rem] xl:grid-cols-[18rem_1.3fr_1.3fr_1.3fr_1fr] rounded-lg p-2 divide-x divide-black/20 divide-x-reverse border border-black/20 odd:border-none odd:bg-zinc-100">
                                         <div className="text-xs text-black/80 pr-3 flex items-center">
                                             شخص/شرکت سطح یک ( یک ساله )
                                         </div>
@@ -184,7 +184,7 @@ function UserPurchases() {
                                         </div>
                                     </div>
 
-                                    <div className="grid lg:grid-cols-[15rem_1fr_1fr_1fr_10rem] xl:grid-cols-[18rem_1.3fr_1.3fr_1.3fr_1fr] rounded-lg p-2 divide-x divide-black/20 divide-x-reverse border border-black/20 odd:border-none odd:bg-zinc-100">
+                                    <div className="grid min-w-full w-max grid-cols-[15rem_9rem_9rem_9rem_10rem] xl:grid-cols-[18rem_1.3fr_1.3fr_1.3fr_1fr] rounded-lg p-2 divide-x divide-black/20 divide-x-reverse border border-black/20 odd:border-none odd:bg-zinc-100">
                                         <div className="text-xs text-black/80 pr-3 flex items-center">
                                             شخص/شرکت سطح یک ( یک ساله )
                                         </div>

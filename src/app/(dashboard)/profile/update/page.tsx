@@ -28,7 +28,7 @@ function UpdateProfile() {
                                 icon={<PersonSolidIcon width={20} height={20} />}
                             />
 
-                            <div className="mt-9 grid grid-cols-3 gap-5 m-12">
+                            <div className="mt-9 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-12 max-sm:gap-y-9">
                                 <Input.TextInput
                                     floatLabel="نام"
                                     defaultValue="صحر رستمی"
@@ -52,7 +52,7 @@ function UpdateProfile() {
                                 icon={<CreditCardSolidIcon width={20} height={20} />}
                             />
 
-                            <div className="mt-9 grid grid-cols-3 gap-5">
+                            <div className="mt-9 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 max-sm:gap-y-9">
                                 <Input.TextInput
                                     floatLabel="شماره حساب"
                                     defaultValue="123456789123456"
@@ -72,20 +72,18 @@ function UpdateProfile() {
                                 />
                             </div>
 
-                            <div className="w-max mr-auto flex items-center gap-x-3 mt-12">
-                                <div className="w-max mr-auto flex items-center gap-x-3 mt-10">
-                                    <Link href="/">
-                                        <button className="btn btn--bordered">
-                                            <CancelIconSquare width={18} height={18} />
-                                            لغو
-                                        </button>
-                                    </Link>
-
-                                    <button className="btn btn--primary">
-                                        <TickIconSquare width={18} height={18} />
-                                        ذخیره تغییرات
+                            <div className="sm:w-max sm:mr-auto flex items-center gap-x-3 mt-10">
+                                <Link href="/" className="max-sm:flex-1">
+                                    <button className="btn btn--bordered w-full">
+                                        <CancelIconSquare width={18} height={18} />
+                                        لغو
                                     </button>
-                                </div>
+                                </Link>
+
+                                <button className="btn btn--primary w-full max-sm:flex-[3]">
+                                    <TickIconSquare width={18} height={18} />
+                                    ذخیره تغییرات
+                                </button>
                             </div>
                         </>}
                     />

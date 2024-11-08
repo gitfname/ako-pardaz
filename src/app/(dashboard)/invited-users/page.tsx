@@ -24,7 +24,7 @@ function InvitedUsers() {
                         leftSection={
                             <button onClick={() => setIsInviteFriendModalOpen(true)} className="btn btn--primary">
                                 <PersonPlusIconSolid width={18} height={18} />
-                                دعوت از دوستان
+                                <span className="max-sm:hidden">دعوت از دوستان</span>
                             </button>
                         }
                         children={
@@ -39,8 +39,8 @@ function InvitedUsers() {
                                     radius="md"
                                 />
 
-                                <div className="space-y-3">
-                                    <div className="grid grid-cols-3 bg-myBlue/10 rounded-lg p-2 divide-x divide-black/20 divide-x-reverse">
+                                <div className="space-y-3 overflow-x-auto">
+                                    <div className="grid min-w-full w-max max-sm:grid-cols-[10rem_10rem_10rem] sm:grid-cols-3 bg-myBlue/10 rounded-lg p-2 divide-x divide-black/20 divide-x-reverse">
                                         <div className="text-sm text-black/60 pr-3">
                                             کاربر
                                         </div>
@@ -54,7 +54,7 @@ function InvitedUsers() {
                                         </div>
                                     </div>
 
-                                    <div className="grid grid-cols-3 rounded-lg p-2 divide-x divide-black/20 divide-x-reverse border border-black/20 odd:border-none odd:bg-zinc-100">
+                                    <div className="grid min-w-full w-max max-sm:grid-cols-[10rem_10rem_10rem] sm:grid-cols-3 rounded-lg p-2 divide-x divide-black/20 divide-x-reverse border border-black/20 odd:border-none odd:bg-zinc-100">
                                         <div className="pr-3 flex items-center gap-x-1.5">
                                             <Image
                                                 src="https://fakeimg.pl/180x180/"
@@ -76,7 +76,7 @@ function InvitedUsers() {
                                         </div>
                                     </div>
 
-                                    <div className="grid grid-cols-3 rounded-lg p-2 divide-x divide-black/20 divide-x-reverse border border-black/20 odd:border-none odd:bg-zinc-100">
+                                    <div className="grid min-w-full w-max max-sm:grid-cols-[10rem_10rem_10rem] sm:grid-cols-3 rounded-lg p-2 divide-x divide-black/20 divide-x-reverse border border-black/20 odd:border-none odd:bg-zinc-100">
                                         <div className="pr-3 flex items-center gap-x-1.5">
                                             <Image
                                                 src="https://fakeimg.pl/180x180/"
@@ -98,7 +98,7 @@ function InvitedUsers() {
                                         </div>
                                     </div>
 
-                                    <div className="grid grid-cols-3 rounded-lg p-2 divide-x divide-black/20 divide-x-reverse border border-black/20 odd:border-none odd:bg-zinc-100">
+                                    <div className="grid min-w-full w-max max-sm:grid-cols-[10rem_10rem_10rem] sm:grid-cols-3 rounded-lg p-2 divide-x divide-black/20 divide-x-reverse border border-black/20 odd:border-none odd:bg-zinc-100">
                                         <div className="pr-3 flex items-center gap-x-1.5">
                                             <Image
                                                 src="https://fakeimg.pl/180x180/"
@@ -120,7 +120,7 @@ function InvitedUsers() {
                                         </div>
                                     </div>
 
-                                    <div className="grid grid-cols-3 rounded-lg p-2 divide-x divide-black/20 divide-x-reverse border border-black/20 odd:border-none odd:bg-zinc-100">
+                                    <div className="grid min-w-full w-max max-sm:grid-cols-[10rem_10rem_10rem] sm:grid-cols-3 rounded-lg p-2 divide-x divide-black/20 divide-x-reverse border border-black/20 odd:border-none odd:bg-zinc-100">
                                         <div className="pr-3 flex items-center gap-x-1.5">
                                             <Image
                                                 src="https://fakeimg.pl/180x180/"
@@ -142,7 +142,7 @@ function InvitedUsers() {
                                         </div>
                                     </div>
 
-                                    <div className="grid grid-cols-3 rounded-lg p-2 divide-x divide-black/20 divide-x-reverse border border-black/20 odd:border-none odd:bg-zinc-100">
+                                    <div className="grid min-w-full w-max max-sm:grid-cols-[10rem_10rem_10rem] sm:grid-cols-3 rounded-lg p-2 divide-x divide-black/20 divide-x-reverse border border-black/20 odd:border-none odd:bg-zinc-100">
                                         <div className="pr-3 flex items-center gap-x-1.5">
                                             <Image
                                                 src="https://fakeimg.pl/180x180/"
@@ -164,7 +164,7 @@ function InvitedUsers() {
                                         </div>
                                     </div>
 
-                                    <div className="grid grid-cols-3 rounded-lg p-2 divide-x divide-black/20 divide-x-reverse border border-black/20 odd:border-none odd:bg-zinc-100">
+                                    <div className="grid min-w-full w-max max-sm:grid-cols-[10rem_10rem_10rem] sm:grid-cols-3 rounded-lg p-2 divide-x divide-black/20 divide-x-reverse border border-black/20 odd:border-none odd:bg-zinc-100">
                                         <div className="pr-3 flex items-center gap-x-1.5">
                                             <Image
                                                 src="https://fakeimg.pl/180x180/"
@@ -186,7 +186,7 @@ function InvitedUsers() {
                                         </div>
                                     </div>
 
-                                    <div className="grid grid-cols-3 rounded-lg p-2 divide-x divide-black/20 divide-x-reverse border border-black/20 odd:border-none odd:bg-zinc-100">
+                                    <div className="grid min-w-full w-max max-sm:grid-cols-[10rem_10rem_10rem] sm:grid-cols-3 rounded-lg p-2 divide-x divide-black/20 divide-x-reverse border border-black/20 odd:border-none odd:bg-zinc-100">
                                         <div className="pr-3 flex items-center gap-x-1.5">
                                             <Image
                                                 src="https://fakeimg.pl/180x180/"
@@ -208,7 +208,7 @@ function InvitedUsers() {
                                         </div>
                                     </div>
 
-                                    <div className="grid grid-cols-3 rounded-lg p-2 divide-x divide-black/20 divide-x-reverse border border-black/20 odd:border-none odd:bg-zinc-100">
+                                    <div className="grid min-w-full w-max max-sm:grid-cols-[10rem_10rem_10rem] sm:grid-cols-3 rounded-lg p-2 divide-x divide-black/20 divide-x-reverse border border-black/20 odd:border-none odd:bg-zinc-100">
                                         <div className="pr-3 flex items-center gap-x-1.5">
                                             <Image
                                                 src="https://fakeimg.pl/180x180/"
@@ -230,7 +230,7 @@ function InvitedUsers() {
                                         </div>
                                     </div>
 
-                                    <div className="grid grid-cols-3 rounded-lg p-2 divide-x divide-black/20 divide-x-reverse border border-black/20 odd:border-none odd:bg-zinc-100">
+                                    <div className="grid min-w-full w-max max-sm:grid-cols-[10rem_10rem_10rem] sm:grid-cols-3 rounded-lg p-2 divide-x divide-black/20 divide-x-reverse border border-black/20 odd:border-none odd:bg-zinc-100">
                                         <div className="pr-3 flex items-center gap-x-1.5">
                                             <Image
                                                 src="https://fakeimg.pl/180x180/"

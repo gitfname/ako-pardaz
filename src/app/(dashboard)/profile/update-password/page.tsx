@@ -23,40 +23,38 @@ function UpdatePassword() {
                             <div>
                                 <div className="space-y-6">
                                     <TextInput
+                                        w={{ base: "100%", xs: "22rem" }}
                                         placeholder="کلمه عبور قبلی"
-                                        className="w-full max-w-xs"
                                         radius="md"
                                     />
 
                                     <PasswordInput
                                         placeholder="کلمه عبور جدید"
+                                        w={{ base: "100%", xs: "22rem" }}
                                         visibilityToggleIcon={({ reveal }) => <EyeIcon width={18} height={18} className={reveal ? "stroke-myBlue/90" : "stroke-black/70"} />}
-                                        className="w-full max-w-xs"
                                         radius="md"
                                     />
 
                                     <PasswordInput
                                         placeholder="تکرار کلمه عبور جدید"
+                                        w={{ base: "100%", xs: "22rem" }}
                                         visibilityToggleIcon={({ reveal }) => <EyeIcon width={18} height={18} className={reveal ? "stroke-myBlue/90" : "stroke-black/70"} />}
-                                        className="w-full max-w-xs"
                                         radius="md"
                                     />
                                 </div>
 
-                                <div className="w-max mr-auto flex items-center gap-x-3 mt-10">
-                                    <div className="w-max mr-auto flex items-center gap-x-3 mt-10">
-                                        <Link href="/">
-                                            <button className="btn btn--bordered">
-                                                <CancelIconSquare width={18} height={18} />
-                                                لغو
-                                            </button>
-                                        </Link>
-
-                                        <button className="btn btn--primary">
-                                            <TickIconSquare width={18} height={18} />
-                                            ثبت و تغییر کلمه رمز عبور
+                                <div className="sm:w-max sm:mr-auto flex items-center gap-x-3 mt-10">
+                                    <Link href="/" className="max-sm:flex-1">
+                                        <button className="btn btn--bordered w-full">
+                                            <CancelIconSquare width={18} height={18} />
+                                            لغو
                                         </button>
-                                    </div>
+                                    </Link>
+
+                                    <button className="btn btn--primary max-sm:flex-[3]">
+                                        <TickIconSquare width={18} height={18} />
+                                        ثبت و تغییر کلمه رمز عبور
+                                    </button>
                                 </div>
                             </div>
                         }

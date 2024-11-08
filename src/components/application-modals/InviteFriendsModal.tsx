@@ -3,6 +3,7 @@
 import { CopyIconSolid } from "@/icons"
 import { TextInput, Modal, Button } from "@mantine/core"
 import { atom, useAtom } from "jotai"
+import { useMediaQuery } from "@mantine/hooks"
 
 const inviteFriendsModalAtom = atom(false)
 
@@ -12,17 +13,23 @@ export const InviteFriendsModalMolecule = {
 
 function InviteFriendsModal() {
     const [isOpen, setIsOpen] = useAtom(inviteFriendsModalAtom)
+    const isSm = useMediaQuery("(max-width: 640px)")
 
     return (
 
         <Modal
+            fullScreen={isSm}
             opened={isOpen}
             onClose={() => setIsOpen(false)}
             title="دعوت از دوستان"
             radius="lg"
             classNames={{ header: "border-b border-b-gray-100" }}
         >
-            <Modal.Body>
+            <Modal.Body
+            classNames={{
+                body: "max-sm:!px-0"
+            }}
+            >
                 <div>
                     <p className="text-xs mb-2 text-black/80">دعوت از طریق کد معرف</p>
 
