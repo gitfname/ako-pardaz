@@ -69,7 +69,7 @@ function SideBar() {
                     }
                 />
 
-                <div className="mt-auto mx-auto w-[80%] pb-4 box-shadow-sm">
+                <div className="mt-auto mx-auto max-md:w-[45%] w-[80%] pb-4 box-shadow-sm">
                     <Image
                         alt="Ako Pardaz"
                         src="/images/logo.svg"

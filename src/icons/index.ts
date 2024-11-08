@@ -64,6 +64,7 @@ import ReportsIconSolid2 from "./ReportsIconSolid2";
 import CloudsIconSolid from "./CloudsIconSolid";
 import CalendarIconSolid from "./CalendarIconSIlid";
 import BillInquiryIconSquare from "./BillInquiryIconSquare";
+import MenuIconSolid from "./MenuIconSolid";
 
 export {
     MenuIcon,
@@ -131,5 +132,6 @@ export {
     ReportsIconSolid2,
     CloudsIconSolid,
     CalendarIconSolid,
-    BillInquiryIconSquare
+    BillInquiryIconSquare,
+    MenuIconSolid
 }
