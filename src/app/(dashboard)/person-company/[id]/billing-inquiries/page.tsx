@@ -11,7 +11,7 @@ function BillingInquiries() {
                 <BillIconSquare width={30} height={30} />
             }
             leftSection={
-                <div className="flex items-center gap-x-2">
+                <div className="flex items-center gap-3 flex-wrap">
                     <Button component={Link} href="/person-company/123/billing-inquiries/create" color="var(--mantine-color-primaryColor-3)" radius="md" fw={400}>
                         <PlusIcon width={20} height={20} className="stroke-white" />&nbsp;
                         ثبت صورت حساب
@@ -30,8 +30,8 @@ function BillingInquiries() {
                 </div>
             }
         >
-            <div className="flex items-center justify-between">
-                <div className="w-full max-w-[10rem]">
+            <div className="flex items-center justify-between flex-wrap gap-5">
+                <div className="w-full max-w-[10rem] max-md:order-2">
                     <Select
                         defaultValue="بیشترین فروش"
                         data={["بیشترین فروش", "محبوب ترین ها", "کمترین فروش"]}
@@ -42,31 +42,33 @@ function BillingInquiries() {
                     />
                 </div>
 
-                <TextInput
-                    placeholder="جست و جو"
-                    radius="md"
-                    className="w-full max-w-xs"
-                    leftSection={
-                        <SearchIcon width={17} height={17} className="stroke-black/50" />
-                    }
-                    classNames={{
-                        input: "!bg-myBlue/10 !placeholder-black/55"
-                    }}
-                />
+                <div className="max-md:order-1 max-md:w-full md:max-w-sm md:w-full">
+                    <TextInput
+                        placeholder="جست و جو"
+                        radius="md"
+                        className="w-full"
+                        leftSection={
+                            <SearchIcon width={17} height={17} className="stroke-black/50" />
+                        }
+                        classNames={{
+                            input: "!bg-myBlue/10 !placeholder-black/55"
+                        }}
+                    />
+                </div>
             </div>
 
             <div className="mt-10 space-y-7">
                 {
                     Array.from({ length: 6 }).map((_, index) => (
                         <div key={index} className="shadow-md rounded-xl border border-zinc-200">
-                            <div className="grid grid-cols-[8rem_1fr_1fr] p-3 bg-myBlue/10">
-                                <p className="text-sm font-medium text-black/90">103867</p>
-                                <p className="text-sm font-medium text-black/90 pr-3 border-r border-r-black/10">قرارگاه سازندگی خاتم الانبیا موسسه اروندان</p>
-                                <p className="text-sm font-medium text-black/90 text-left">9876543234567890-065</p>
+                            <div className="grid grid-cols-[8rem_1fr_1fr] max-md:grid-cols-[1fr_1fr] p-3 bg-myBlue/10 max-md:gap-y-4">
+                                <p className="text-sm font-medium text-black/90 max-md:order-2">103867</p>
+                                <p className="text-sm max-md:col-span-full max-md:order-1 font-medium text-black/90 md:pr-3 md:border-r border-r-black/10">قرارگاه سازندگی خاتم الانبیا موسسه اروندان</p>
+                                <p className="text-sm font-medium text-black/90 text-left max-md:order-last">9876543234567890-065</p>
                             </div>
 
                             <div className="overflow-x-auto pb-1">
-                                <div className="grid w-max lg:grid-cols-[8rem_8rem_11rem_10rem_10rem_6rem_6rem_14rem_13rem] bg-zinc-200/50 border-y border-y-black/10 py-2 p-3 divide-x divide-black/20 divide-x-reverse">
+                                <div className="grid w-max grid-cols-[8rem_8rem_11rem_10rem_10rem_6rem_6rem_14rem_13rem] bg-zinc-200/50 border-y border-y-black/10 py-2 p-3 divide-x divide-black/20 divide-x-reverse">
                                     <div className="text-sm text-black/60 pr-3">
                                         سریال
                                     </div>
@@ -104,7 +106,7 @@ function BillingInquiries() {
                                     </div>
                                 </div>
 
-                                <div className="grid w-max lg:grid-cols-[8rem_8rem_11rem_10rem_10rem_6rem_6rem_14rem_13rem] bg-white py-2.5 p-3 divide-x divide-black/20 divide-x-reverse">
+                                <div className="grid w-max grid-cols-[8rem_8rem_11rem_10rem_10rem_6rem_6rem_14rem_13rem] bg-white py-2.5 p-3 divide-x divide-black/20 divide-x-reverse">
                                     <div className="text-sm text-black/60 pr-3">
                                         09876544567
                                     </div>

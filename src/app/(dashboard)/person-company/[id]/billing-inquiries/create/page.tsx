@@ -21,7 +21,7 @@ const CreateBillingInquiry_Step1 = () => {
             </div>
 
 
-            <div className="mt-8 grid grid-cols-3 gap-4 gap-y-5 items-end">
+            <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 gap-y-5 items-end">
                 <Select
                     description="نوع صورت حساب"
                     placeholder={"یک گزینه را انتخاب کنید"}
@@ -101,7 +101,7 @@ const CreateBillingInquiry_Step2 = () => {
             {
                 items?.map((item) => (
                     <div key={item.key} className="bg-zinc-100 border border-dashed border-zinc-300 p-4 rounded-2xl mt-8">
-                        <div className="grid grid-cols-3 xl:grid-cols-4 gap-4 gap-y-5 items-end">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 gap-y-5 items-end">
                             <Select
                                 description="کالا/خدمت"
                                 placeholder={"یک گزینه را انتخاب کنید"}
@@ -193,7 +193,7 @@ const CreateBillingInquiry_Step3 = () => {
                     </div>
                 </div>
 
-                <div className="mt-5 grid grid-cols-2 gap-5">
+                <div className="mt-5 grid grid-cols-1 md:grid-cols-2 gap-5">
                     <Input.TextInput
                         rightSection="سریال صورت حساب"
                         value="876544567890"
@@ -356,7 +356,7 @@ const CreateBillingInquiry_Step3 = () => {
                     />
                 </div>
 
-                <div className="mt-5 grid grid-cols-2 gap-4">
+                <div className="mt-5 grid grid-cols-1 md:grid-cols-2 gap-4">
                     <Input.TextInput
                         rightSection="مبلغ از کسر تخفیف"
                         value="65,100,000,000 ریال"
@@ -467,11 +467,11 @@ function CreateBillingInquiry() {
 
             {formStep === 3 ? <CreateBillingInquiry_Step3 /> : null}
 
-            <div className="flex items-center justify-between mt-12">
+            <div className="flex items-center justify-between mt-12 flex-wrap gap-5">
                 {
                     formStep > 1
                         ?
-                        <button onClick={handlePrevStepButtonClick} className="btn btn--primary btn--outline border border-myBlue">
+                        <button onClick={handlePrevStepButtonClick} className="btn btn--primary btn--outline border border-myBlue max-sm:flex-1 max-sm:order-2">
                             <ArrowLeftSolidIcon width={18} height={18} className="rotate-180" />
                             مرحبه قبل
                         </button>
@@ -479,29 +479,27 @@ function CreateBillingInquiry() {
                         null
                 }
 
-                <div className="w-max mr-auto flex items-center gap-x-3">
-                    <div className="w-max mr-auto flex items-center gap-x-3">
-                        <Link href="/person-company/123/billing-inquiries">
-                            <button className="btn btn--bordered">
-                                <CancelIconSquare width={18} height={18} />
-                                لغو
-                            </button>
-                        </Link>
+                <div className="sm:w-max sm:mr-auto flex items-center gap-x-3 max-sm:w-full max-sm:order-1">
+                    <Link href="/person-company/123/billing-inquiries" className="max-sm:flex-1">
+                        <button className="btn btn--bordered w-full">
+                            <CancelIconSquare width={18} height={18} />
+                            لغو
+                        </button>
+                    </Link>
 
-                        {
-                            formStep < 3
-                                ?
-                                <button onClick={handleSubmitButtonClick} className="btn btn--primary">
-                                    مرحله بعد ( افزودن آیتم )
-                                    <ArrowLeftSolidIcon width={18} height={18} />
-                                </button>
-                                :
-                                <button onClick={handleSubmitButtonClick} className="btn btn--primary">
-                                    <PlusIcon width={18} height={18} />
-                                    ثبت صورت حساب
-                                </button>
-                        }
-                    </div>
+                    {
+                        formStep < 3
+                            ?
+                            <button onClick={handleSubmitButtonClick} className="btn btn--primary max-sm:flex-[3]">
+                                مرحله بعد ( افزودن آیتم )
+                                <ArrowLeftSolidIcon width={18} height={18} />
+                            </button>
+                            :
+                            <button onClick={handleSubmitButtonClick} className="btn btn--primary max-sm:flex-[3]">
+                                <PlusIcon width={18} height={18} />
+                                ثبت صورت حساب
+                            </button>
+                    }
                 </div>
             </div>
         </BodyCard>

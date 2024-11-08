@@ -24,7 +24,7 @@ function TopNavigationBar() {
     const pathname = usePathname()
 
     return (
-        <nav className="w-full p-2 max-md:min-h-[18rem] md:min-h-[14rem] bg-gradient-to-r from-[#7583D1] to-[#4a5382]">
+        <nav className="w-full p-2 max-md:min-h-[19rem] md:min-h-[14rem] bg-gradient-to-r from-[#7583D1] to-[#4a5382]">
             <div className="flex items-center justify-between p-2 max-md:flex-col max-md:items-start gap-5">
                 {/* right section */}
                 <div className="flex-1 max-md:order-2 w-full">
@@ -99,9 +99,13 @@ function TopNavigationBar() {
                 </div>
             </div>
 
-            <p className="mt-6 text-sm text-white/90 font-normal">
-                {routeNames[pathname]}
-            </p>
+            <div className="flex items-center max-sm:flex-col max-sm:items-start gap-y-5 justify-between mt-6">
+                <p className="text-sm text-white/90 font-normal">
+                    {routeNames[pathname]}
+                </p>
+
+                <div id="top-navigation-bar-left-section"></div>
+            </div>
         </nav>
     )
 }

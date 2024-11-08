@@ -68,7 +68,7 @@ function PersonCompanyLayout({ children }: { children: ReactNode }) {
                             صورت حساب ها
                         </Button>
 
-                        <Button onClick={() => setCurrentTab(5)} color="var(--mantine-color-primaryColor-3)" fw={400} radius="md" variant={currentTab === 5 ? "filled" : "light"} flex={1}>
+                        <Button component={Link} href="/person-company/123/reports" onClick={() => setCurrentTab(5)} color="var(--mantine-color-primaryColor-3)" fw={400} radius="md" variant={currentTab === 5 ? "filled" : "light"} flex={1}>
                             <ReportsIconSolid width={18} height={18} className={"flex-shrink-0 " + (currentTab === 5 ? "stroke-white" : "stroke-myBlue")} />&nbsp;
                             گزارشات
                         </Button>

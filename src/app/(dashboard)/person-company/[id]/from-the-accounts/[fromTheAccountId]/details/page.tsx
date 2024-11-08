@@ -11,7 +11,7 @@ function DetailsSinglePersonCompanyFromTheAccount() {
             }
         >
 
-            <div className="mt-8 grid grid-cols-2 xl:grid-cols-3 gap-4 gap-y-5 items-end">
+            <div className="mt-8 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 gap-y-5 items-end">
                 <Input.TextInput
                     value="ورق فولادی"
                     readOnly
@@ -83,14 +83,12 @@ function DetailsSinglePersonCompanyFromTheAccount() {
                 />
             </div>
 
-            <div className="w-max mr-auto flex items-center gap-x-3 mt-12">
-                <div className="w-max mr-auto flex items-center gap-x-3 mt-10">
-                    <Link href="/person-company/123/from-the-accounts">
-                        <button className="btn btn--primary">
-                            بازگشت
-                        </button>
-                    </Link>
-                </div>
+            <div className="sm:w-max sm:mr-auto flex items-center gap-x-3 mt-10">
+                <Link href="/person-company/123/from-the-accounts" className="max-sm:w-full">
+                    <button className="btn btn--primary w-full">
+                        بازگشت
+                    </button>
+                </Link>
             </div>
         </BodyCard>
     )

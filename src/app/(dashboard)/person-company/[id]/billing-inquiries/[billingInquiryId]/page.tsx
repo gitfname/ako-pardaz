@@ -23,7 +23,7 @@ function SinglePersonCompanyBillInquiryDetails() {
                         icon={<BookmarkIconSolid width={21} height={21} className="stroke-myBlue" />}
                     />
 
-                    <div className="grid grid-cols-2 gap-5">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                         <Input.TextInput
                             rightSection="سریال صورت حساب"
                             value="114"
@@ -140,7 +140,7 @@ function SinglePersonCompanyBillInquiryDetails() {
                         text="مجموع صورت حساب"
                     />
 
-                    <div className="grid grid-cols-2 gap-4">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <Input.TextInput
                             rightSection="مبلغ از کسر تخفیف"
                             value="65,100,000,000 ریال"

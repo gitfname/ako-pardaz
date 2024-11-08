@@ -16,7 +16,7 @@ function FinancialSettings() {
                         }
                         children={
                             <>
-                                <div className="grid grid-cols-2 gap-4">
+                                <div className="grid md:grid-cols-2 gap-4">
                                     <Input.TextInput
                                         readOnly
                                         rightSection="نام"
@@ -66,10 +66,10 @@ function FinancialSettings() {
                                     />
                                 </div>
 
-                                <div className="w-max mr-auto flex items-center gap-x-3 mt-10">
+                                <div className="sm:w-max sm:mr-auto max-sm:w-full flex items-center gap-x-3 mt-10">
 
-                                    <Link href="/edit-financial-settings">
-                                        <button className="btn btn--primary">
+                                    <Link href="/edit-financial-settings" className="block w-full">
+                                        <button className="btn btn--primary w-full">
                                             <EditIcon width={18} height={18} />
                                             ویرایش تنظیمات مالی
                                         </button>

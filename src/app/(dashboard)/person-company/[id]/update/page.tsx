@@ -20,7 +20,7 @@ function UpdateSinglePersonCompany() {
                         text="پر کردن فیلد های ستاره دار اجباری است"
                     />
 
-                    <div className="grid grid-cols-3 gap-4 gap-y-9 mt-10">
+                    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 gap-y-9 mt-10">
                         <Input.TextInput
                             floatLabel="نام *"
                             className="text-input--bordered"
@@ -49,12 +49,12 @@ function UpdateSinglePersonCompany() {
                         <Input.TextInput floatLabel="کد پستی" className="text-input--bordered" />
                         <Input.TextInput floatLabel="تلفن" className="text-input--bordered" />
 
-                        <div className="col-span-2">
+                        <div className="md:col-span-2">
                             <Input.TextInput floatLabel="آدرس" className="text-input--bordered" />
                         </div>
                         <Input.TextInput floatLabel="کد شعبه" className="text-input--bordered" />
 
-                        <div className="col-span-2">
+                        <div className="md:col-span-2">
                             <Input.TextAreaInput floatLabel="توضیحات پیشفرض صورت حساب" className="text-input--bordered" />
                         </div>
                         <Input.SelectInput
@@ -65,15 +65,15 @@ function UpdateSinglePersonCompany() {
                         />
                     </div>
 
-                    <div className="w-max mr-auto flex items-center gap-x-3 mt-10">
-                        <Link href="/person-company/123">
-                            <button className="btn btn--bordered">
+                    <div className="sm:w-max sm:mr-auto flex items-center gap-x-3 mt-10">
+                        <Link href="/person-company/123" className="flex-1">
+                            <button className="btn btn--bordered w-full">
                                 <CancelIconSquare width={18} height={18} />
                                 لغو
                             </button>
                         </Link>
 
-                        <button className="btn btn--primary">
+                        <button className="btn btn--primary max-sm:flex-[3]">
                             <TickIconSquare width={18} height={18} />
                             ثبت شخص/شرکت
                         </button>

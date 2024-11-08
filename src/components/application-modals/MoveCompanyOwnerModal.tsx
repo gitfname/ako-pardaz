@@ -2,6 +2,7 @@
 
 import { CopyIconSolid, SearchIcon, TickIconSquare } from "@/icons"
 import { TextInput, Modal, Button, Select } from "@mantine/core"
+import { useMediaQuery } from "@mantine/hooks"
 import { atom, useAtom } from "jotai"
 import Image from "next/image"
 
@@ -13,17 +14,23 @@ export const MoveCompanyOwnerModalMolecule = {
 
 function MoveCompanyOwnerModal() {
     const [isOpen, setIsOpen] = useAtom(moveCompanyOwnerModalAtom)
+    const isSm = useMediaQuery("(max-width: 640px)")
 
     return (
 
         <Modal
+            fullScreen={isSm}
             opened={isOpen}
             onClose={() => setIsOpen(false)}
             title="انتقال مالکیت"
             radius="lg"
             classNames={{ header: "border-b border-b-gray-100" }}
         >
-            <Modal.Body>
+            <Modal.Body
+                classNames={{
+                    body: "max-sm:!px-0"
+                }}
+            >
                 <TextInput
                     classNames={{
                         input: "!bg-zinc-100"
@@ -36,7 +43,7 @@ function MoveCompanyOwnerModal() {
                 />
 
                 <div className="mt-4 space-y-3">
-                    <div className="p-2 px-3 rounded-lg bg-myBlue/15 flex items-center justify-between">
+                    <div className="p-2 px-3 rounded-lg bg-myBlue/15 flex items-center justify-between flex-wrap gap-y-3">
                         <div className="flex items-center gap-2">
                             <Image
                                 alt=""
@@ -53,7 +60,7 @@ function MoveCompanyOwnerModal() {
                             </div>
                         </div>
 
-                        <div className="w-full max-w-[9rem]">
+                        <div className="w-full max-w-[9rem] max-sm:mr-auto max-sm:w-max">
                             <Select
                                 defaultValue="دسترسی کامل"
                                 data={["دسترسی کامل", "دسترسی نیمه کامل", "دسترسی اولیه"]}
@@ -66,7 +73,7 @@ function MoveCompanyOwnerModal() {
                         </div>
                     </div>
 
-                    <div className="p-2 px-3 rounded-lg bg-myBlue/15 flex items-center justify-between">
+                    <div className="p-2 px-3 rounded-lg bg-myBlue/15 flex items-center justify-between flex-wrap gap-y-3">
                         <div className="flex items-center gap-2">
                             <Image
                                 alt=""
@@ -83,7 +90,7 @@ function MoveCompanyOwnerModal() {
                             </div>
                         </div>
 
-                        <div className="w-full max-w-[9rem]">
+                        <div className="w-full max-w-[9rem] max-sm:mr-auto max-sm:w-max">
                             <Select
                                 defaultValue="دسترسی کامل"
                                 data={["دسترسی کامل", "دسترسی نیمه کامل", "دسترسی اولیه"]}
@@ -96,7 +103,7 @@ function MoveCompanyOwnerModal() {
                         </div>
                     </div>
 
-                    <div className="p-2 px-3 rounded-lg bg-myBlue/15 flex items-center justify-between">
+                    <div className="p-2 px-3 rounded-lg bg-myBlue/15 flex items-center justify-between flex-wrap gap-y-3">
                         <div className="flex items-center gap-2">
                             <Image
                                 alt=""
@@ -113,7 +120,7 @@ function MoveCompanyOwnerModal() {
                             </div>
                         </div>
 
-                        <div className="w-full max-w-[9rem]">
+                        <div className="w-full max-w-[9rem] max-sm:mr-auto max-sm:w-max">
                             <Select
                                 defaultValue="دسترسی کامل"
                                 data={["دسترسی کامل", "دسترسی نیمه کامل", "دسترسی اولیه"]}
@@ -126,8 +133,8 @@ function MoveCompanyOwnerModal() {
                         </div>
                     </div>
 
-                    <div className="w-max mr-auto">
-                        <Button color="var(--mantine-color-primaryColor-3)" fw={400} radius="md" mt="xl">
+                    <div className="w-max mr-auto max-sm:w-full">
+                        <Button w={{ base: "100%", xs: "max-content" }} color="var(--mantine-color-primaryColor-3)" fw={400} radius="md" mt="xl">
                             <TickIconSquare width={18} height={18} className="stroke-white" />&nbsp;
                             ثبت انتقال دسترسی
                         </Button>

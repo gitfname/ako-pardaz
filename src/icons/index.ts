@@ -59,6 +59,11 @@ import CalculatorIconSolid from "./CalculatorIconSolid";
 import DiscountIconSolid from "./DiscounticonSolid";
 import BookmarkIconWithMessageSquare from "./BookmarkIconWithMessageSquare";
 import TickIconFilled from "./TickIconFilled";
+import ReportsIconSquare from "./ReportsIconSquare";
+import ReportsIconSolid2 from "./ReportsIconSolid2";
+import CloudsIconSolid from "./CloudsIconSolid";
+import CalendarIconSolid from "./CalendarIconSIlid";
+import BillInquiryIconSquare from "./BillInquiryIconSquare";
 
 export {
     MenuIcon,
@@ -121,5 +126,10 @@ export {
     CalculatorIconSolid,
     DiscountIconSolid,
     BookmarkIconWithMessageSquare,
-    TickIconFilled
+    TickIconFilled,
+    ReportsIconSquare,
+    ReportsIconSolid2,
+    CloudsIconSolid,
+    CalendarIconSolid,
+    BillInquiryIconSquare
 }

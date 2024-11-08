@@ -13,7 +13,7 @@ function BodyCard({ icon, leftSection, title, children }: Props) {
         <div className="w-full bg-white rounded-xl  box-shadow-sm p-3">
 
             {/* top section */}
-            <div className="flex items-center justify-between">
+            <div className="flex items-center justify-between flex-wrap gap-y-6 gap-x-5">
 
                 <div className="flex items-center gap-x-2">
                     {

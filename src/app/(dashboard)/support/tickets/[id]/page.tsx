@@ -72,14 +72,14 @@ function TicketDetails() {
                             <DocumentIconSquare width={26} height={26} />
                         }
                         children={<>
-                            <div className="grid grid-cols-2 gap-5">
+                            <div className="grid lg:grid-cols-2 gap-5">
                                 {/* chat section */}
-                                <div className="h-[27rem] overflow-y-auto">
+                                <div className="h-[27rem] overflow-y-auto max-lg:order-2">
                                     <Chat.ChatBox />
                                 </div>
 
                                 {/* details section */}
-                                <div className="flex flex-col gap-y-9">
+                                <div className="flex flex-col gap-y-9 max-lg:order-1">
                                     <Input.TextInput
                                         readOnly
                                         floatLabel="عنوان تیکت"

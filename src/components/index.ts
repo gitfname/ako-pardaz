@@ -7,6 +7,7 @@ import TicketCard from "./TicketCard";
 import MyTicketsList from "./MyTicketsList";
 import DataStack from "./DataStack";
 import NotificationCard from "./NotificationCard";
+import NoReports from "./NoReports";
 
 export {
     SideBar,
@@ -17,5 +18,6 @@ export {
     TicketCard,
     MyTicketsList,
     DataStack,
-    NotificationCard
+    NotificationCard,
+    NoReports
 }

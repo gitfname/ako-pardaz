@@ -16,7 +16,7 @@ function UpdateSinglePersonCompanyProductAndService() {
                 text="پر کردن فیلد های ستاره دار اجباری است"
             />
 
-            <div className="mt-8 grid grid-cols-3 gap-4 gap-y-5 items-end">
+            <div className="mt-8 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 gap-y-5 items-end">
                 <TextInput
                     placeholder="عنوان"
                     defaultValue="سلام جهان"
@@ -86,20 +86,18 @@ function UpdateSinglePersonCompanyProductAndService() {
                 />
             </div>
 
-            <div className="w-max mr-auto flex items-center gap-x-3 mt-12">
-                <div className="w-max mr-auto flex items-center gap-x-3 mt-10">
-                    <Link href="/person-company/123/products-and-services">
-                        <button className="btn btn--bordered">
-                            <CancelIconSquare width={18} height={18} />
-                            لغو
-                        </button>
-                    </Link>
-
-                    <button className="btn btn--primary">
-                        <TickIconSquare width={18} height={18} />
-                        ثبت کالا/خدمات
+            <div className="sm:w-max sm:mr-auto flex items-center gap-x-3 mt-10">
+                <Link href="/person-company/123/products-and-services" className="max-sm:flex-1">
+                    <button className="btn btn--bordered w-full">
+                        <CancelIconSquare width={18} height={18} />
+                        لغو
                     </button>
-                </div>
+                </Link>
+
+                <button className="btn btn--primary max-sm:flex-[3]">
+                    <TickIconSquare width={18} height={18} />
+                    ثبت کالا/خدمات
+                </button>
             </div>
         </BodyCard>
     )

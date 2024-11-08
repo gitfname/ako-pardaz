@@ -21,7 +21,7 @@ function Settings() {
                                 text="پر کردن فیلد های ستاره دار اجباری است"
                             />
 
-                            <div className="grid grid-cols-2 xl:grid-cols-3 gap-5 gap-y-9 mt-12">
+                            <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-5 gap-y-9 mt-12">
                                 <Input.TextInput
                                     floatLabel="عنوان تیکت"
                                     className="text-input--bordered"
@@ -39,7 +39,7 @@ function Settings() {
                                     className="text-input--bordered"
                                 />
 
-                                <div className="col-span-2">
+                                <div className="lg:col-span-2">
                                     <Input.TextAreaInput
                                         floatLabel="متن پیام"
                                         className="text-input--bordered"
@@ -47,15 +47,15 @@ function Settings() {
                                 </div>
                             </div>
 
-                            <div className="w-max mr-auto flex items-center gap-x-3 mt-10">
-                                <Link href="/support">
-                                    <button className="btn btn--bordered">
+                            <div className="sm:w-max sm:mr-auto flex items-center gap-x-3 mt-10">
+                                <Link href="/support" className="max-sm:flex-1">
+                                    <button className="btn btn--bordered w-full">
                                         <CancelIconSquare width={18} height={18} />
                                         لغو
                                     </button>
                                 </Link>
 
-                                <button className="btn btn--primary">
+                                <button className="btn btn--primary max-sm:flex-[3]">
                                     <TickIconSquare width={18} height={18} />
                                     ارسال تیکت
                                 </button>

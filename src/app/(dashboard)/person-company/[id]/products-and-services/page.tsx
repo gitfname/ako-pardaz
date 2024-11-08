@@ -11,7 +11,7 @@ function PersonCompanyProductsAndServices() {
                 <CubeIconSquare width={28} height={28} />
             }
             leftSection={
-                <div className="flex items-center gap-x-2">
+                <div className="flex items-center gap-2 flex-wrap">
                     <Button component={Link} href="/person-company/123/new-product-service" color="var(--mantine-color-primaryColor-3)" radius="md" fw={400}>
                         <PlusIcon width={20} height={20} className="stroke-white" />&nbsp;
                         ثبت کالا/خدمات
@@ -30,8 +30,8 @@ function PersonCompanyProductsAndServices() {
                 </div>
             }
         >
-            <div className="flex items-center justify-between">
-                <div className="w-full max-w-[10rem]">
+            <div className="flex items-center justify-between flex-wrap gap-5">
+                <div className="w-full max-w-[10rem] max-md:order-2">
                     <Select
                         defaultValue="بیشترین فروش"
                         data={["بیشترین فروش", "محبوب ترین ها", "کمترین فروش"]}
@@ -42,22 +42,24 @@ function PersonCompanyProductsAndServices() {
                     />
                 </div>
 
-                <TextInput
-                    placeholder="جست و جو"
-                    radius="md"
-                    className="w-full max-w-xs"
-                    leftSection={
-                        <SearchIcon width={17} height={17} className="stroke-black/50" />
-                    }
-                    classNames={{
-                        input: "!bg-myBlue/10 !placeholder-black/55"
-                    }}
-                />
+                <div className="max-md:order-1 max-md:w-full">
+                    <TextInput
+                        placeholder="جست و جو"
+                        radius="md"
+                        className="w-full md:max-w-xs"
+                        leftSection={
+                            <SearchIcon width={17} height={17} className="stroke-black/50" />
+                        }
+                        classNames={{
+                            input: "!bg-myBlue/10 !placeholder-black/55"
+                        }}
+                    />
+                </div>
             </div>
 
             <div className="mt-10 space-y-3 overflow-x-auto pb-3">
 
-                <div className="grid w-max lg:grid-cols-[3rem_18rem_8rem_9rem_12rem_7rem_7rem_6rem_8rem] bg-myBlue/10 rounded-lg p-2 divide-x divide-black/20 divide-x-reverse">
+                <div className="grid w-max grid-cols-[3rem_18rem_8rem_9rem_12rem_7rem_7rem_6rem_8rem] bg-myBlue/10 rounded-lg p-2 divide-x divide-black/20 divide-x-reverse">
                     <div></div>
 
                     <div className="text-sm text-black/60 pr-3">
@@ -93,7 +95,7 @@ function PersonCompanyProductsAndServices() {
                     </div>
                 </div>
 
-                <div className="grid w-max lg:grid-cols-[3rem_18rem_8rem_9rem_12rem_7rem_7rem_6rem_8rem] rounded-lg p-2 divide-x divide-black/20 divide-x-reverse border border-black/20 odd:border-none odd:bg-zinc-100">
+                <div className="grid w-max grid-cols-[3rem_18rem_8rem_9rem_12rem_7rem_7rem_6rem_8rem] rounded-lg p-2 divide-x divide-black/20 divide-x-reverse border border-black/20 odd:border-none odd:bg-zinc-100">
                     <div className="pr-3 flex items-center">
                         <Checkbox size="sm" />
                     </div>
@@ -151,7 +153,7 @@ function PersonCompanyProductsAndServices() {
                     </div>
                 </div>
 
-                <div className="grid w-max lg:grid-cols-[3rem_18rem_8rem_9rem_12rem_7rem_7rem_6rem_8rem] rounded-lg p-2 divide-x divide-black/20 divide-x-reverse border border-black/20 odd:border-none odd:bg-zinc-100">
+                <div className="grid w-max grid-cols-[3rem_18rem_8rem_9rem_12rem_7rem_7rem_6rem_8rem] rounded-lg p-2 divide-x divide-black/20 divide-x-reverse border border-black/20 odd:border-none odd:bg-zinc-100">
                     <div className="pr-3 flex items-center">
                         <Checkbox size="sm" />
                     </div>
@@ -209,7 +211,7 @@ function PersonCompanyProductsAndServices() {
                     </div>
                 </div>
 
-                <div className="grid w-max lg:grid-cols-[3rem_18rem_8rem_9rem_12rem_7rem_7rem_6rem_8rem] rounded-lg p-2 divide-x divide-black/20 divide-x-reverse border border-black/20 odd:border-none odd:bg-zinc-100">
+                <div className="grid w-max grid-cols-[3rem_18rem_8rem_9rem_12rem_7rem_7rem_6rem_8rem] rounded-lg p-2 divide-x divide-black/20 divide-x-reverse border border-black/20 odd:border-none odd:bg-zinc-100">
                     <div className="pr-3 flex items-center">
                         <Checkbox size="sm" />
                     </div>
@@ -267,7 +269,7 @@ function PersonCompanyProductsAndServices() {
                     </div>
                 </div>
 
-                <div className="grid w-max lg:grid-cols-[3rem_18rem_8rem_9rem_12rem_7rem_7rem_6rem_8rem] rounded-lg p-2 divide-x divide-black/20 divide-x-reverse border border-black/20 odd:border-none odd:bg-zinc-100">
+                <div className="grid w-max grid-cols-[3rem_18rem_8rem_9rem_12rem_7rem_7rem_6rem_8rem] rounded-lg p-2 divide-x divide-black/20 divide-x-reverse border border-black/20 odd:border-none odd:bg-zinc-100">
                     <div className="pr-3 flex items-center">
                         <Checkbox size="sm" />
                     </div>
@@ -325,7 +327,7 @@ function PersonCompanyProductsAndServices() {
                     </div>
                 </div>
 
-                <div className="grid w-max lg:grid-cols-[3rem_18rem_8rem_9rem_12rem_7rem_7rem_6rem_8rem] rounded-lg p-2 divide-x divide-black/20 divide-x-reverse border border-black/20 odd:border-none odd:bg-zinc-100">
+                <div className="grid w-max grid-cols-[3rem_18rem_8rem_9rem_12rem_7rem_7rem_6rem_8rem] rounded-lg p-2 divide-x divide-black/20 divide-x-reverse border border-black/20 odd:border-none odd:bg-zinc-100">
                     <div className="pr-3 flex items-center">
                         <Checkbox size="sm" />
                     </div>
@@ -383,7 +385,7 @@ function PersonCompanyProductsAndServices() {
                     </div>
                 </div>
 
-                <div className="grid w-max lg:grid-cols-[3rem_18rem_8rem_9rem_12rem_7rem_7rem_6rem_8rem] rounded-lg p-2 divide-x divide-black/20 divide-x-reverse border border-black/20 odd:border-none odd:bg-zinc-100">
+                <div className="grid w-max grid-cols-[3rem_18rem_8rem_9rem_12rem_7rem_7rem_6rem_8rem] rounded-lg p-2 divide-x divide-black/20 divide-x-reverse border border-black/20 odd:border-none odd:bg-zinc-100">
                     <div className="pr-3 flex items-center">
                         <Checkbox size="sm" />
                     </div>
@@ -441,7 +443,7 @@ function PersonCompanyProductsAndServices() {
                     </div>
                 </div>
 
-                <div className="grid w-max lg:grid-cols-[3rem_18rem_8rem_9rem_12rem_7rem_7rem_6rem_8rem] rounded-lg p-2 divide-x divide-black/20 divide-x-reverse border border-black/20 odd:border-none odd:bg-zinc-100">
+                <div className="grid w-max grid-cols-[3rem_18rem_8rem_9rem_12rem_7rem_7rem_6rem_8rem] rounded-lg p-2 divide-x divide-black/20 divide-x-reverse border border-black/20 odd:border-none odd:bg-zinc-100">
                     <div className="pr-3 flex items-center">
                         <Checkbox size="sm" />
                     </div>

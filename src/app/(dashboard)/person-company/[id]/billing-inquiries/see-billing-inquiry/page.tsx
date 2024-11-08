@@ -1,8 +1,7 @@
 import { BodyCard, Input } from "@/components"
-import TopNavigationBar from "@/components/TopNavigationBar"
 import { AlertInfo } from "@/components/alerts"
-import { BookmarkIconSolid, BookmarkIconWithMessageSquare, DiscountIconSolid, EyeIcon, TickIconFilled } from "@/icons"
-import { Button, TextInput } from "@mantine/core"
+import { BookmarkIconSolid, BookmarkIconWithMessageSquare, EyeIcon, TickIconFilled } from "@/icons"
+import { Button } from "@mantine/core"
 import Link from "next/link"
 
 function SeeBillInquiry() {
@@ -11,7 +10,7 @@ function SeeBillInquiry() {
             title="مشاهده صورت حساب"
             icon={<BookmarkIconWithMessageSquare width={24} height={24} />}
         >
-            <div className="grid grid-cols-[1fr_18rem] gap-3">
+            <div className="grid grid-cols-1 lg:grid-cols-[1fr_18rem] gap-3">
                 <div>
                     <div className="p-2 px-3.5 rounded-lg border border-emerald-500/70 bg-emerald-500/10 mb-4">
                         <TickIconFilled width={21} height={21} className="inline-block" />
@@ -24,7 +23,7 @@ function SeeBillInquiry() {
                         text="اطلاعات صورت حساب"
                     />
 
-                    <div className="w-full grid grid-cols-2 gap-5 mt-5">
+                    <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-5 mt-5">
                         <Input.TextInput
                             rightSection="سریال"
                             value="87654323456789"

@@ -26,7 +26,7 @@ function PersonCompanyDetails() {
                     }
                 >
                     <>
-                        <div className="grid grid-cols-2 gap-4">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
                             <Input.TextInput
                                 value="1345678909876"
                                 readOnly
@@ -79,7 +79,7 @@ function PersonCompanyDetails() {
                             </div>
                         </div>
 
-                        <Button component={Link} href="/person-company/123/update" fw={400} color="var(--mantine-color-primaryColor-3)" radius="md" mt={62}>
+                        <Button w={{base: "100%", xs: "max-content"}} component={Link} href="/person-company/123/update" fw={400} color="var(--mantine-color-primaryColor-3)" radius="md" mt={62}>
                             <EditIcon width={18} height={18} className="stroke-white" />&nbsp;
                             ویرایش اطلاعات
                         </Button>

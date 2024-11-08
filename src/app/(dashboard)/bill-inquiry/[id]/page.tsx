@@ -15,7 +15,7 @@ function SingleBillInquiryDetails() {
                     title="مشاهده صورت حساب"
                     icon={<BookmarkIconWithMessageSquare width={24} height={24} />}
                 >
-                    <div className="grid grid-cols-[1fr_18rem] gap-3">
+                    <div className="grid grid-cols-1 xl:grid-cols-[1fr_18rem] gap-3">
                         <div className="space-y-9">
                             <div>
                                 <AlertInfo
@@ -23,7 +23,7 @@ function SingleBillInquiryDetails() {
                                     text="اطلاعات صورت حساب"
                                 />
 
-                                <div className="w-full grid grid-cols-2 gap-5 mt-5">
+                                <div className="w-full grid-cols-1 grid xl:grid-cols-2 gap-5 mt-5">
                                     <Input.TextInput
                                         rightSection="عنوان"
                                         value="آریا تجهیز سیستم"
@@ -62,7 +62,7 @@ function SingleBillInquiryDetails() {
 
                                 <div className="mt-5 overflow-x-auto rounded-xl overflow-hidden border border-zinc-100">
                                     <div
-                                        className="bg-zinc-100 min-w-full p-2 w-max grid grid-cols-[4rem_10rem_5rem_1fr_1fr]
+                                        className="bg-zinc-100 min-w-full p-2 w-max grid grid-cols-[4rem_10rem_5rem_9rem_9rem]
                     divide-x divide-x-reverse divide-black/15 text-black/60"
                                     >
                                         <p className="text-sm font-medium pr-3">ردیف</p>
@@ -74,7 +74,7 @@ function SingleBillInquiryDetails() {
 
                                     <div
                                         className="min-w-full bg-white px-2 w-max grid
-                        grid-cols-[4rem_10rem_5rem_1fr_1fr]    
+                        grid-cols-[4rem_10rem_5rem_9rem_9rem]    
                         divide-x divide-x-reverse divide-black/15 min-h-9 text-black/90
                         [&_p]:flex [&_p]:items-center border-b border-b-black/10"
                                     >
@@ -87,7 +87,7 @@ function SingleBillInquiryDetails() {
 
                                     <div
                                         className="min-w-full bg-white px-2 w-max grid
-                        grid-cols-[4rem_10rem_5rem_1fr_1fr]    
+                        grid-cols-[4rem_10rem_5rem_9rem_9rem]    
                         divide-x divide-x-reverse divide-black/15 min-h-9 text-black/90
                         [&_p]:flex [&_p]:items-center border-b border-b-black/10"
                                     >
@@ -156,9 +156,11 @@ function SingleBillInquiryDetails() {
                                     </div>
                                 </div>
 
-                                <Button fw={400} color="var(--mantine-color-primaryColor-3)" radius="md" mt="xl" w="100%">
-                                    پرداخت آنلاین
-                                </Button>
+                                <div className="max-w-sm mx-auto mt-10">
+                                    <Button fw={400} color="var(--mantine-color-primaryColor-3)" radius="md" w="100%">
+                                        پرداخت آنلاین
+                                    </Button>
+                                </div>
                             </div>
                         </div>
                     </div>
